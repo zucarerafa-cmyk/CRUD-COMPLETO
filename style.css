@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e8f5e9 0%, #fce4ec 100%);
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(244, 143, 177, 0.15);
+    border: 2px solid #a5d6a7;
+    text-align: left;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #d81b60;
+    margin-bottom: 22px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #81c784; 
+    border-radius: 2px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2e7d32;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f1f8e9;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #f48fb1;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(244, 143, 177, 0.25);
+}
+
+button[type="submit"] {
+    background-color: #f48fb1;
+    color: #ffffff;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(244, 143, 177, 0.4);
+}
+
+button[type="submit"]:hover {
+    background-color: #ec407a;
+    transform: translateY(-1px);
+}
+
+a.lista {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    padding: 10px;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+a.lista:hover {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+
+.mensagem {
+    text-align: center;
+    font-size: 15px;
+    color: #2e7d32;
+    margin-bottom: 25px;
+    background-color: #e8f5e9;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.container.sucesso h1 {
+    color: #388e3c;
+}
+
+.container.sucesso h1::after {
+    background-color: #f48fb1;
+}
+
+.container p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.container p strong {
+    color: #2e7d32;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #f8bbd0;
+    margin: 16px 0;
+}
+
+.container a:not(.lista) {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-right: 4px;
+    margin-top: 6px;
+    transition: all 0.2s;
+}
+
+.container a[href*="editar.php"] {
+    color: #d97706;
+    background-color: #fef3c7;
+}
+.container a[href*="editar.php"]:hover {
+    background-color: #fde68a;
+}
+
+.container a[href*="excluir.php"] {
+    color: #c2185b;
+    background-color: #f8bbd0;
+}
+.container a[href*="excluir.php"]:hover {
+    background-color: #f48fb1;
+    color: #fff;
+}
+
+.container a[href*="inativar.php"] {
+    color: #43a047;
+    background-color: #e8f5e9;
+}
+.container a[href*="inativar.php"]:hover {
+    background-color: #c8e6c9;
+}
